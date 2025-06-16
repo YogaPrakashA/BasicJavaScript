@@ -1,0 +1,12 @@
+<button id="btn" onclick="printFunction()">print</button>
+<h1 id="h1Head"></h1>
+<div id="div"></div>
+<script>
+
+  var head = document.getElementById("div")
+    function printFunction(){
+        var h1List = document.createElement("h1")
+        h1List.textContent="Hello"
+        head.append(h1List);
+    }
+</script>

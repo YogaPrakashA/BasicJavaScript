@@ -1,0 +1,44 @@
+<h1>Guess the number</h1>
+<input id="inputNumber">
+<button id="btn" onclick="checkValue()">Check</button>
+<p id="answer1">You are socre is right/wrong</p>
+<p id="scoreResult">TotalScore:10</p>
+
+<script>
+
+//  get value using tag Id
+    var enteredNum = document.getElementById("inputNumber")
+    var answer = document.getElementById("answer1")
+    var scoreResult = document.getElementById("scoreResult")
+    var btn = document.getElementById("btn")
+
+    var randomNumber = Math.floor(Math.random() * 10) + 1
+    var score = 10
+    console.info(randomNumber);
+    function checkValue() {
+
+        var enteredValue = enteredNum.value
+        if (randomNumber == enteredValue) {
+            answer.textContent = "Right"
+            alert("You WON...")
+        }
+        else {
+
+            if (score > 0) {
+                score = score - 1
+                scoreResult.textContent = "Score : " + score
+                answer.textContent = "wrong"
+            }
+            else {
+                scoreResult.textContent = "Score : " + score
+                answer.textContent = "Better luck next time"
+                btn.setAttribute("disabled", true)
+                alert("You LOSE..")
+            }
+        }
+
+    }
+
+
+
+</script>

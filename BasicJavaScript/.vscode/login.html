@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        .inputField{
+            margin-top: 2%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="background-color: cadetblue;">
+    <div class="inputField">Login</div>
+    <div class="inputField">
+        <input class="inputField" type="userName" id="user"><br>
+        <input type="password" class="inputField"><br>
+        <button class="inputField" onclick="validate()">Submit</button>
+    </div>
+</body>
+<script>
+    var user = document.getElementById("user");
+    var password = document.getElementById("password");
+
+    var u1 = "prakash";
+    var p1 = "123456";
+
+    function validate(){
+
+        if(user.value != u1){
+            alert("Invalid user");
+        }else if(password.value != p1){
+            alert("invalid password")
+        }
+        alert("login sucessfully.....");
+
+    }
+
+</script>
+</html>

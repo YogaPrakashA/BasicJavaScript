@@ -1,0 +1,56 @@
+<!-- <button id="one" onclick="deleteFun1()">One</button>
+<button id="two" onclick="deleteFun2()">two</button>
+<button id="three" onclick="deleteFun3()">Three</button>
+<button id="four" onclick="deleteFun4()">Four</button>
+<button id="five" onclick="deleteFun5()">Five</button>
+<button>Six</button>
+
+<Script>
+
+    var butn1 = document.getElementById("one")
+    var butn2 = document.getElementById("two")
+    var butn3 = document.getElementById("three")
+    var butn4 = document.getElementById("four")
+    var butn5 = document.getElementById("five")
+    function deleteFun1() {
+        butn1.addEventListener("click",function(){
+            this.remove()
+        })
+    }
+    function deleteFun2() {
+        butn2.addEventListener("click",function(){
+            this.remove()
+        })
+    }
+
+    function deleteFun3() {
+        butn3.addEventListener("click",function(){
+            this.remove()
+        })
+    }
+    function deleteFun4() {
+        butn4.addEventListener("click",function(){
+            this.remove()
+        })
+    }
+    function deleteFun5() {
+        butn5.addEventListener("click",function(){
+            this.remove()
+        })
+    }
+
+</Script> -->
+
+<h1 onclick="deleteItem(event)">one</h1>
+<h1 onclick="deleteItem(event)">two</h1>
+<h1 onclick="deleteItem(event)">three</h1>
+<h1 onclick="deleteItem(event)">four</h1>
+<h1 onclick="deleteItem(event)">five</h1>
+<h1 onclick="deleteItem(event)">six</h1>
+
+<script>
+
+    function deleteItem(event) {
+        event.target.remove()
+    }
+</script>

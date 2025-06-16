@@ -1,0 +1,25 @@
+<div id="one">
+    <h1>Hello</h1>
+</div>
+
+<h1 class="test">test1</h1>
+<h1 class="test">test2</h1>
+<h1 class="test">test3</h1>
+
+
+<script>
+
+    var div = document.getElementById("one")
+    console.log(div.innerHTML)
+
+//  fetched data from  classname,Id and Tag
+    var div1=document.querySelectorAll(".test")
+    for(count=0;count<div1.length;count++){
+        console.log(div1[count].textContent)
+    }
+
+//  className fetched data
+    var div2=document.getElementsByClassName("test")
+    console.log(div2[2].textContent)
+    
+</script>

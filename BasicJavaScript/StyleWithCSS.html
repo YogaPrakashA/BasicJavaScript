@@ -1,0 +1,27 @@
+<style>
+    div {
+        background-color: blanchedalmond;
+        width: 25%;
+        height: 25%;
+        transition: 2s;
+    }
+
+    .widthmax{
+        width: 100%;
+    }
+</style>
+
+<div id="divColor">
+
+</div>
+<button onclick="changeColo()">changeColor</button>
+
+<script>
+    var divValue = document.getElementById("divColor")
+
+    function changeColo() {
+        divValue.style.backgroundColor = "skyblue"
+        divValue.setAttribute("class","widthmax")
+
+    }
+</script>
