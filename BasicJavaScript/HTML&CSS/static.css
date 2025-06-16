@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(66, 13, 95);
+}
+.div-class{
+    padding: 20%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: whitesmoke;
+    border: 1px black;
+}
+
+.l-lable1{
+    
+}
