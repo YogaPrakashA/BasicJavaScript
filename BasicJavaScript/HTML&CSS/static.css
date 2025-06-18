@@ -11,6 +11,18 @@ body{
     border: 1px black;
 }
 
-.l-lable1{
-    
+a[href^="/"] {
+  color: brown
+}
+
+a[href*="login"] {
+  text-decoration: overline;
+}
+
+input[required] {
+  border-left: 4px solid red;
+}
+
+input:focus {
+  border-color: blue;
 }
