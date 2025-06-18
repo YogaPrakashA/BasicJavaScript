@@ -1,110 +1,147 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> <!-- Defines HTML version -->
+<html>          <!-- Root of the document -->
 
-    <head>
-        <title>WELCOME</title>
-        <link rel="stylesheet" href="static.css">
-    </head>
-    <body>
-        
-        <div class="div-class">
+<head>          <!-- Metadata container example(charset, script files and link's)-->
+  <title>WELCOME</title> <!-- Page title (in browser tab) -->
+  <link rel="stylesheet" href="static.css">
+</head>
 
-            <Button variant="contained">Contained</Button>
-<Button variant="contained" disabled>
-  Disabled
-</Button>
-<Button variant="contained" href="#contained-buttons">
-  Link
-</Button>
-             <main>
-    <section>
-      <h2>Latest Posts</h2>
-      <article>
-        <h3>What is HTML5?</h3>
-        <p>HTML5 is the latest version of HTML...</p>
-      </article>
+<body>                <!-- Visible content of the page in Web browser. -->
 
-      <article>
-        <h3>Why Semantic Tags Matter</h3>
-        <p>Semantic tags help with SEO and accessibility...</p>
-      </article>
-    </section>
+  <!-- Headings (h1 is largest). these tag's has differance size-->
+  <h1>H1 tag content</h1>
+  <h2>H2 tag content</h2>
+  <h3>H3 tag content</h3>
+  <h4>H4 tag content</h4>
+  <h5>H5 tag content</h5>
+  <h6>H6 tag content</h6>
 
-    <aside>
-      <h4>About Me</h4>
-      <p>I’m a web developer sharing tips and tutorials.</p>
-    </aside>
-  </main>
-            <header>
-    <h1>My Blog</h1>
-    
-  </header>
-            <nav>
-  <ul>
-    <li><a href="/login">Home</a></li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/services">Services</a></li>
-    <li><a href="/contact">Contact</a></li>
-  </ul>
-</nav>
-            <a href="/"><span class="home-label">Home</span></a>
-            <p>Please <strong>do not share</strong> your password with anyone.</p> 
-            <p>Today's special menu: <b>Pizza</b>, <b>Pasta</b>, and <b>Salad</b>.</p>
-            <p>I <em>really</em> need your help today.</p>
-            <p>The word <i>déjà vu</i> is French.</p>
-            <div class="product">
-                 <h2>Apple</h2>
-            <p>Price: <span class="price">$1.99</span></p>
-</div>
-<dl>
-  <dt>HTML</dt>
-  <dd>HyperText Markup Language. It is used to structure web content.</dd>
+  <!-- we can write paragraph -->
+  <p>HTML5 is the latest version of HTML...</p>
 
-  <dt>CSS</dt>
-  <dd>Cascading Style Sheets. It is used for styling HTML content.</dd>
+  <!-- Important/bold text -->
+  <strong>Do not share</strong>
 
-  <dt>JavaScript</dt>
-  <dd>A programming language used to create dynamic web pages.</dd>
-</dl>
+  <!-- this tag break the current line -->
+  <br>
 
-<form>
-  <label for="email">Email Address:</label>
-  <input type="email" id="email" name="email">
-</form>
-<form>
-  <input type="checkbox" id="subscribe" name="subscribe">
-  <label for="subscribe">Subscribe to newsletter</label>
-</form>
-<form>
-  <label for="country">Choose your country:</label>
-  <select id="country" name="country">
-    <option value="in">India</option>
-    <option value="us">United States</option>
-    <option value="uk">United Kingdom</option>
-    <option value="ca">Canada</option>
-  </select>
-</form>
-<select name="language">
-  <option disabled selected>Select your language</option>
-  <option value="en">English</option>
-  <option value="ta">Tamil</option>
-  <option value="hi">Hindi</option>
-</select>
-<fieldset>
-    <legend>Personal Information</legend>
+  <!-- Bold (without emphasis).  -->
+  <b>Bold content but we never mention Important content here</b>
 
-    <label for="fname">First Name:</label>
-    <input type="text" id="fname" name="fname"><br><br>
+  <!--<em> Emphasis (italic) -->
+  <p>I <em>really</em> need your help today.</p>
 
-    <label for="lname">Last Name:</label>
-    <input type="text" id="lname" name="lname"><br><br>
+  <!--Italic (without emphasis) -->
+  <p>The word <i>déjà vu</i> is French.</p>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email">
-  </fieldset>
-        </div>
+  <!-- Horizontal line -->
+  <hr>
 
-        
-        
-    </body>
+
+
+  <div class="div-class">
+
+
+
+
+
+    <Button variant="contained">Contained</Button>
+    <Button variant="contained" disabled>
+      Disabled
+    </Button>
+    <Button variant="contained" href="#contained-buttons">
+      Link
+    </Button>
+    <main>
+      <section>
+        <h2>Latest Posts</h2>
+        <article>
+          <h3>What is HTML5?</h3>
+          <p>HTML5 is the latest version of HTML...</p>
+        </article>
+
+        <article>
+          <h3>Why Semantic Tags Matter</h3>
+          <p>Semantic tags help with SEO and accessibility...</p>
+        </article>
+      </section>
+
+      <aside>
+        <h4>About Me</h4>
+        <p>I’m a web developer sharing tips and tutorials.</p>
+      </aside>
+    </main>
+    <header>
+      <h1>My Blog</h1>
+
+    </header>
+    <nav>
+      <ul>
+        <li><a href="/login">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="/"><span class="home-label">Home</span></a>
+    <p>Please <strong>do not share</strong> your password with anyone.</p>
+    <p>Today's special menu: <b>Pizza</b>, <b>Pasta</b>, and <b>Salad</b>.</p>
+    <p>I <em>really</em> need your help today.</p>
+    <p>The word <i>déjà vu</i> is French.</p>
+    <div class="product">
+      <h2>Apple</h2>
+      <p>Price: <span class="price">$1.99</span></p>
+    </div>
+    <dl>
+      <dt>HTML</dt>
+      <dd>HyperText Markup Language. It is used to structure web content.</dd>
+
+      <dt>CSS</dt>
+      <dd>Cascading Style Sheets. It is used for styling HTML content.</dd>
+
+      <dt>JavaScript</dt>
+      <dd>A programming language used to create dynamic web pages.</dd>
+    </dl>
+
+    <form>
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email">
+    </form>
+    <form>
+      <input type="checkbox" id="subscribe" name="subscribe">
+      <label for="subscribe">Subscribe to newsletter</label>
+    </form>
+    <form>
+      <label for="country">Choose your country:</label>
+      <select id="country" name="country">
+        <option value="in">India</option>
+        <option value="us">United States</option>
+        <option value="uk">United Kingdom</option>
+        <option value="ca">Canada</option>
+      </select>
+    </form>
+    <select name="language">
+      <option disabled selected>Select your language</option>
+      <option value="en">English</option>
+      <option value="ta">Tamil</option>
+      <option value="hi">Hindi</option>
+    </select>
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+    </fieldset>
+  </div>
+
+
+
+</body>
+
 </html>
